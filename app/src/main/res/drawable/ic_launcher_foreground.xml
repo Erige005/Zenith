@@ -1,0 +1,103 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Ambient glow behind diamond -->
+    <path
+        android:pathData="M54,28 L76,54 L54,80 L32,54 Z"
+        android:fillColor="#1538BDF8" />
+    
+    <!-- Prism Facet 1: Top Left -->
+    <path
+        android:pathData="M54,32 L34,54 L54,54 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="34"
+                android:startY="32"
+                android:endX="54"
+                android:endY="54"
+                android:type="linear">
+                <item android:color="#E0F2FE" android:offset="0.0" />
+                <item android:color="#38BDF8" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Prism Facet 2: Top Right -->
+    <path
+        android:pathData="M54,32 L74,54 L54,54 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="32"
+                android:endX="74"
+                android:endY="54"
+                android:type="linear">
+                <item android:color="#FFFFFF" android:offset="0.0" />
+                <item android:color="#818CF8" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Prism Facet 3: Bottom Left -->
+    <path
+        android:pathData="M54,54 L34,54 L54,76 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="34"
+                android:startY="54"
+                android:endX="54"
+                android:endY="76"
+                android:type="linear">
+                <item android:color="#0284C7" android:offset="0.0" />
+                <item android:color="#0EA5E9" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Prism Facet 4: Bottom Right -->
+    <path
+        android:pathData="M54,54 L74,54 L54,76 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="54"
+                android:endX="74"
+                android:endY="76"
+                android:type="linear">
+                <item android:color="#6366F1" android:offset="0.0" />
+                <item android:color="#A855F7" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Refracted Laser Beams radiating out -->
+    <path
+        android:pathData="M54,32 L54,20"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#FFFFFF" />
+    <path
+        android:pathData="M74,54 L86,54"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#A855F7" />
+    <path
+        android:pathData="M34,54 L22,54"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#38BDF8" />
+    <path
+        android:pathData="M54,76 L54,88"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeColor="#38BDF8" />
+
+    <!-- Core light spark -->
+    <path
+        android:pathData="M54,50 L56,54 L54,58 L52,54 Z"
+        android:fillColor="#FFFFFF" />
+</vector>
